@@ -58,8 +58,6 @@ $token = JWT::encode($payload, $ONEBLINK_SECRET_KEY, 'HS256');
           // Change these to a URL you wish to send your users too
           submissionRedirectUrl: 'https://google.com',
           cancelRedirectUrl: 'https://google.com',
-          paymentReceiptUrl: '',
-          paymentFormUrl: '',
           // (Optional) An identifier to match the form submission with in your system.
           // externalId: '',
           // (Optional) The data to pre-fill the Optimize Form.
