@@ -22,8 +22,8 @@ export ONEBLINK_SECRET_KEY=<Add your developer secret key here>
 1. In `index.php` update the below variables
 
 ```
-$ONEBLINK_ACCESS_KEY = <Add your developer access key here>;
-$ONEBLINK_SECRET_KEY = <Add your developer secret key here>;
+$ONEBLINK_ACCESS_KEY = 'Add your developer access key here';
+$ONEBLINK_SECRET_KEY = 'Add your developer secret key here';
 $USERNAME = 'username';
 $FORM_ID = 1;
 $FORMS_APP_ID = 1;
