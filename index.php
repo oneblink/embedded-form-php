@@ -4,8 +4,8 @@ use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
 // Update these
-$ONEBLINK_ACCESS_KEY = getenv('ONEBLINK_ACCESS_KEY');
-$ONEBLINK_SECRET_KEY = getenv('ONEBLINK_SECRET_KEY');
+$ONEBLINK_ACCESS_KEY = 'my-access-key';
+$ONEBLINK_SECRET_KEY = 'my-secret-key';
 $USERNAME = 'username';
 $FORM_ID = 1;
 $FORMS_APP_ID = 1;
@@ -53,8 +53,8 @@ $token = JWT::encode($payload, $ONEBLINK_SECRET_KEY, 'HS256');
         // on all of the options available when rendering an Optimize Form
         OneBlinkForms.render({
           selector: '#optimize-form',
-          formId: <?= $FORM_ID ?>, // Numbers
-          formsAppId: <?= $FORMS_APP_ID ?>, // Stinking Text Field
+          formId: <?= $FORM_ID ?>, // Form Id
+          formsAppId: <?= $FORMS_APP_ID ?>, // Forms App Id
           // Change these to a URL you wish to send your users too
           submissionRedirectUrl: 'https://google.com',
           cancelRedirectUrl: 'https://google.com',
