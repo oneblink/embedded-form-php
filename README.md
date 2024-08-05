@@ -8,32 +8,9 @@
 composer.phar install
 ```
 
-### Setting One Blink Keys
+### Setting variables
 
-You will need to add two environment variables
-
-```
-export ONEBLINK_ACCESS_KEY=<Add your developer access key here>
-export ONEBLINK_SECRET_KEY=<Add your developer secret key here>
-```
-
-### Setting properties
-
-1. In `index.php` update the below variables
-
-```
-$ONEBLINK_ACCESS_KEY = 'Add your developer access key here';
-$ONEBLINK_SECRET_KEY = 'Add your developer secret key here';
-$USERNAME = 'username';
-$FORM_ID = 1;
-$FORMS_APP_ID = 1;
-$expiresInSeconds = 300;
-```
-
-### Setting Redirect Urls
-
-The example template is configured to redirect to https://google.com after submitting or canceling the form.
-You can change this behaviour by updating the `submissionRedirectUrl` and `cancelRedirectUrl` properties in `OneBlinkForms.render`
+In `index.php` update the variables marked with a `TODO` comment
 
 ### Running locally
 
