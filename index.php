@@ -61,8 +61,8 @@ $token = JWT::encode($payload, $ONEBLINK_SECRET_KEY, 'HS256');
           formId: <?= $FORM_ID ?>, // Form Id
           formsAppId: <?= $FORMS_APP_ID ?>, // Forms App Id
           // Change these to a URL you wish to send your users too
-          submissionRedirectUrl: $SUBMISSION_REDIRECT_URL,
-          cancelRedirectUrl: $CANCEL_REDIRECT_URL,
+          submissionRedirectUrl: '<?= $SUBMISSION_REDIRECT_URL ?>',
+          cancelRedirectUrl: '<?= $CANCEL_REDIRECT_URL ?>',
           // (Optional) An identifier to match the form submission with in your system.
           // externalId: '',
           // (Optional) The data to pre-fill the Optimize Form.
